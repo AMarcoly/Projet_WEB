@@ -19,6 +19,7 @@ header {
 	padding: 20px;
 }
 
+
 nav ul {
 	display: flex;
 	list-style: none;
@@ -46,4 +47,17 @@ footer{
 	align-items: center;
 	padding : 20px;
 
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0; }
+
+a{
+	background-color: transparent; 
+}
+
+#menu {
+	background-color: black;
+	align-items: center;
 }

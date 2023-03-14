@@ -1,30 +1,8 @@
-<!DOCTYPE html>
-<html>
+</header>
+    <!-- fin du header -->
 
-<head>
-	<meta charset="utf-8">
-	<title>Mon Portfolio</title>
-	<meta name="viewport"
-		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-
-<body>
-	<header>
-		<h1>Mon Portfolio</h1>
-		<nav>
-			<ul>
-				<li><a href="#Accueil">Accueil</a></li>
-				<li><a href="#Projetcs">Projets</a></li>
-				<li><a href="#A_propos">À propos</a></li>
-				<li><a href="#Contact">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<main>
+    <!-- debut du main -->
+<main>
 		<section id="Accueil">
 			<div class="Accueil-text">
 				<h2>Bienvenue sur mon portfolio !</h2>
@@ -93,19 +71,28 @@
                     Ut congue magna eu magna hendrerit, et commodo elit eleifend. </p>
 				<a href="#">Voir le projet</a>
 			</div>
+            <button>Voir plus de projets</button>
 		</section>
 
 		<section id="Contact">
 			<h2>Contact</h2>
-			<p>Vous pouvez me contacter à l'adresse suivante :</p>
-			<p>contact@monportfolio.com</p>
+            <form id="formulaire_post"  method="post" enctype="text/plain">
+                 <!-- action="mailto:votre_email@votre_domaine.com" -->
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="sujet">Sujet:</label>
+                <input type="text" id="sujet" name="sujet" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+
+                <input type="submit" value="Envoyer">
+            </form>
+
+			<!-- <p>Vous pouvez me contacter à l'adresse suivante :</p>
+			<p>contact@monportfolio.com</p> -->
 		</section>
-	</main>
-
-	<footer>
-		<p>Droits d'auteur © 2023 Marcoly ANTOINE Mon Portfolio</p>
-	</footer>
-
-</body>
-
-</html>
