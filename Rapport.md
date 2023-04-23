@@ -16,7 +16,7 @@ En ce qu'il attrait au projet j'ai malgré tout réussi à faire les différente
 
 Ce projet dans l'ensemble ne fut que à moitié maitrisé. Il m'incombe maintenant de rattraper les lacunes que j'ai pu y découvrir et de mieux réussir le TP.
 
-
+Pour la pagination j'ai essayé de m'inspirer du Git du projet Pokemon.
 
 Marcoly ANTOINE
 Rapport de projet Web
