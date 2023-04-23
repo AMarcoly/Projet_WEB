@@ -1,0 +1,153 @@
+/**
+    Tout ce qui en commun a toutes les pages 
+**/
+
+/** HEADER **/
+
+#main_header #page_de_couverture {
+    height: 75px;
+    background-image: url("../img/degrade_texture.jpg");
+    display: flex;
+    text-align: center;
+    
+}
+
+/** Section **/
+header h2{
+    font-family: var(--common_font_family);
+    color: white;
+}
+#main_section h1,#main_section h2{
+    color: white;
+    font-family: var(--title_font_family);
+    font-size: 400;
+    font-weight: 400;
+}
+
+#main_section nav{
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    justify-items: center;
+}
+
+@media all and (min-width: 742px){
+    #main_section nav{ /* le parent des div c sur lui qu'on met le grid*/
+        width: 742px;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 50px;
+        justify-items: flex-start;
+    }   
+}
+
+@media all and (min-width: 1140px){
+    #main_section nav{ /* le parent des div c sur lui qu'on met le grid*/
+        width: 1140px;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 50px;
+        justify-items: flex-start;
+    }   
+}
+
+#main_section nav h1{
+    margin: 33px 0 0 0;
+}
+
+@media all and (min-width: 742px){
+    #main_section nav h1{
+        margin: 88px 0;
+        grid-column: 1/3;
+    }
+}
+
+@media all and (min-width: 1140px){
+    #main_section nav h1{
+        grid-column: 1/4;
+    }
+}
+
+/* #main_section nav>div */
+.projet_image{
+    width: 340px;
+    height: 500px;
+    background-color: rgba(205, 255, 176,0.1);
+    color: white;
+    border-radius: 5px;
+}
+
+#main_section nav > div header img{
+    border-radius: 5px 5px 0 0;
+    min-width: 100%;
+    height: 194px;
+    object-fit: cover;
+}
+
+.projet_image section h2{
+    font-family: var(--title_font_family);
+    font-weight: 400px;
+    font-size: 27px;
+    margin: 0px; /* rapprocher de la photo*/  
+}
+
+header select{
+    font-family: var(--common_font_family);
+    justify-self: end;
+    align-self: center;
+    width: 15vmax;
+    height: 50%;
+    border: 0;
+    background-color: grey;
+}
+
+header select:hover{
+	 cursor:pointer;
+}
+
+
+.projet_image section, .projet_image footer{
+    padding: 15px;
+}
+
+#main_section nav > div section div i{
+    font-size: 14px;
+    color: rgb(255, 199, 0);
+}
+
+#main_section nav > div section div span{
+    font-family: var(--common_font_family);
+    color: #c5c5c5;
+    font-size: 9px;
+}
+
+
+
+#main_section nav > div section p{
+    margin: 0;
+    font-family: var(--common_font_family);
+}
+
+#main_section nav > div footer{
+    font-family: var(--common_font_family);
+    display: flex;
+    justify-content: flex-end;
+}
+
+#main_section nav > div footer a{
+    color: #08b38b;
+}
+
+.boutton {
+    background-color: #4CAF50; /* Couleur de fond */
+    border: none; /* Supprimer la bordure */
+    color: white; /* Couleur du texte */
+    padding: 15px 32px; /* Ajouter du padding */
+    text-align: center; /* Centrer le texte */
+    text-decoration: none; /* Supprimer la décoration du texte */
+    display: inline-block; /* Afficher en bloc */
+    font-size: 16px; /* Taille de la police */
+    margin: 4px 2px; /* Ajouter une marge */
+    cursor: pointer; /* Changer le curseur au survol */
+  }
+  
